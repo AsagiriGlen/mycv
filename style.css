@@ -460,6 +460,74 @@ h3 {
 }
 .resume .func .interests-items div i {
   font-size: 45px;
+}
+
+/* Media Query for tablets and below (768px) */
+@media (max-width: 768px) {
+  .resume {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    flex-direction: column;
+  }
+
+  .resume .base {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .resume .func {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .resume .func .work,
+  .resume .func .edu,
+  .resume .func .newright {
+    width: 100%;
+    float: none;
+    margin: 0 0 15px 0 !important;
+  }
+
+  .resume .func .interests-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .resume .func .interests-items div {
+    width: 80px;
+    height: 80px;
+  }
+
+  .resume .func .interests-items div i {
+    font-size: 36px;
+  }
+
+  .resume .base .profile .info .name {
+    font-size: 1.4em;
+  }
+
+  .resume .base .profile .info .job {
+    font-size: 1.2em;
+  }
+}
+
+/* Media Query for mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .resume .func {
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  .resume .func h3 i {
+    font-size: 0.9em;
+  }
+}
   width: 60px;
   height: 60px;
   line-height: 60px;
